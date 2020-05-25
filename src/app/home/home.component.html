@@ -1,0 +1,486 @@
+﻿<div class="container-fluid">
+  <div class="row parent-container">
+    <div class="col-sm-1 side-bar-container">
+      <aside>
+        <ul>
+          <li class="sidebar-header">
+            <div class="icons">
+              <i class="fa fa-bars"></i>
+            </div>
+          </li>
+          <li style="overflow: hidden;">
+            <div id="ex4">
+              <span class="p1 fa-stack fa-2x has-badge" data-count="2">
+                <i class="fa fa-bell-o fa-stack-1x xfa-inverse" data-="2b" style="font-size: 18px; padding-right: 30px;"></i>
+              </span>
+            </div>
+            <div class="icons" style="margin-top: -40px;">
+              <i class="fa fa-user-o"></i>
+            </div>
+          </li>
+          <li class="th-large">
+            <div class="icons">
+              <i class="fa fa-th-large"></i>
+            </div>
+          </li>
+          <li>
+            <div class="icons">
+              <i class="fa fa-microchip"></i>
+            </div>
+          </li>
+          <li>
+            <div class="icons">
+              <i class="fa fa-question-circle-o"></i>
+            </div>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <div class="col-sm-11">
+      <div class="row header">
+        <div class="col-md-2">
+          <div class="logo">
+            <img src="assets/images/logo.png" />
+          </div>
+        </div>
+        <div class="col-md-9 mt-1">
+          <div class="form-inline md-form form-sm mt-1 search-container">
+            <input
+              class="form-control form-control-sm"
+              type="text"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <i class="fa fa-search search-icon"></i>
+          </div>
+        </div>
+        <div class="col-md-1 text-center mt-2 power-icon">
+          <div class="power-icon-link">
+            <a (click)="logout()"><i class="fa fa-power-off"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-1 status">
+        <div class="col-md-6 left-section">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="row user-detail">
+                <div class="col-md-2 pl-3">
+                  <div class="user-avtar">
+                    <img src="assets/images/user-avatar.jpg" />
+                  </div>
+                </div>
+                <div class="col-md-10 pl-5 user-name">
+                  <div class="name">
+                    <span>John Mark Smith</span>
+                    <div class="designation">
+                      <span>Data executive</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 p-1 mr-2">
+              <div class="total badge-container">
+                <div class="badge-label">
+                  <span>
+                    TOTAL
+                  </span>
+                </div>
+                <div class="badge-value">
+                  <span>
+                    150
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 p-1">
+              <div class="approved badge-container">
+                <div class="badge-label">
+                  <span>
+                    APPROVED
+                  </span>
+                </div>
+                <div class="badge-value">
+                  <span>
+                    95
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 p-1 ml-2">
+              <div class="badge-container rejected">
+                <div class="badge-label">
+                  <span>
+                    REJECTED
+                  </span>
+                </div>
+                <div class="badge-value">
+                  <span>
+                    55
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 right-section">
+          <div class="row">
+            <div class="col-md-4 p-1 ml-3">
+              <div class="right-badge-container">
+                <div class="badge-average">
+                  <span>
+                    Average Handling Time
+                  </span>
+                </div>
+                <div class="badge-average-value">
+                  <span>
+                    00:15:00
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 p-1">
+              <div class="row">
+                <div class="col-md-6">
+                  <div>
+                    <div class="right-header-key">
+                      <span>
+                        Available
+                      </span>
+                    </div>
+                    <div class="right-header-value">
+                      <span>
+                        06:06
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 text-right mt-3">
+                  <div>
+                    <label class="switch">
+                      <input type="checkbox" checked id="test" />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 p-1">
+              <div class="row">
+                <div class="col-md-6">
+                  <div>
+                    <div class="right-header-key">
+                      <span>
+                        Break
+                      </span>
+                    </div>
+                    <div class="right-header-value">
+                      <span>
+                        00:06
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 text-right mt-3">
+                  <div>
+                    <label class="switch">
+                      <input type="checkbox" checked id="test" />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-1 heading">
+        <div class="col-md-6 text-left p-2">
+          <div class="heading-title">
+            <span>
+              Subscriber Details
+            </span>
+          </div>
+        </div>
+        <div class="col-md-6 text-right p-2">
+          <div class="history">
+            <span>
+              <i class="fa fa-history" aria-hidden="true"></i>
+            </span>
+            <span>
+              Recent Cases
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-1 main-content">
+        <div class="col-6 image-container demoScroll sc3" style="overflow-y:scroll; overflow-x: hidden; height: 800px;">
+          <div class="row p-2">
+            <div class="image-header">
+              <span>ID Image Front</span>
+            </div>
+          </div>
+          <div class="row p-2 ml-1">
+            <div>
+              <img src="assets/images/Front_id.jpg" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="icons-container">
+              <span class="m-2 ml-1 icon-span">
+                <i class="fa fa-repeat"></i>
+              </span>
+              <span class="icon-span">
+                <i class="fa fa-search-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="row p-2">
+            <div class="image-header">
+              <span>ID Image Back</span>
+            </div>
+          </div>
+          <div class="row p-2 ml-1">
+            <div>
+              <img src="assets/images/Back_id.jpg" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="icons-container">
+              <span class="m-2 ml-1 icon-span">
+                <i class="fa fa-repeat"></i>
+              </span>
+              <span class="icon-span">
+                <i class="fa fa-search-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="row p-2">
+            <div class="image-header">
+              <span>
+                Face Photo
+              </span>
+            </div>
+          </div>
+          <div class="row p-2 ml-1">
+            <div>
+              <img src="assets/images/Front_id.jpg" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="icons-container">
+              <span class="m-2 ml-1 icon-span">
+                <i class="fa fa-repeat"></i>
+              </span>
+              <span class="icon-span">
+                <i class="fa fa-search-plus"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 details-container">
+          <div class="row subscriptin-details p-3 ml-3">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-12 subs-title">
+                  <span>
+                    Subscription Details
+                  </span>
+                </div>
+              </div>
+              <div class="row mt-1 subs-detail">
+                <div class="col-md-3 subs-container">
+                  <div class="subs-key">
+                    <span> Connection Type</span>
+                  </div>
+                  <div class="subs-value">
+                    <span> Prepaid</span>
+                  </div>
+                </div>
+                <div class="col-md-3 subs-container">
+                  <div class="subs-key">
+                    <span>Customer Type</span>
+                  </div>
+                  <div class="subs-value">
+                    <span>Individual</span>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="subs-key">
+                    <span>New Mobile Number</span>
+                  </div>
+                  <div class="subs-value">
+                    <span>9748473839</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-1 subs-detail">
+                <div class="col-md-12 subs-key">
+                  <span>
+                    SIM Serial Number (last 5 digits)
+                  </span>
+                </div>
+              </div>
+              <div class="row mt-1 subs-detail">
+                <div class="col-sm-12 subs-value">
+                  <span>84748</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row customer-info ml-3 mt-2">
+            <div class="col-sm-6">
+              <div class="cust-info-head">
+                <span>
+                  Customer Information
+                </span>
+              </div>
+            </div>
+            <div class="col-sm-6 text-right">
+              <div>
+                <i class="fa fa-pencil"></i>
+              </div>
+            </div>
+          </div>
+          <div class="row ml-3 p-1 cust-info-detail">
+            <div class="col-sm-6">
+                <label>Primary ID Type</label>
+                <input type="text" class="form-control" value="Passport" />
+            </div>
+            <div class="col-sm-6">
+                <label>Primary ID Number</label>
+                <input type="tel" class="form-control" value="83749384934" />
+            </div>
+          </div>
+          <div class="row ml-3 p-1 cust-info-detail">
+            <div class="col-sm-6">
+                <label>First Name</label>
+                <input type="text" class="form-control" value="Doe" />
+            </div>
+            <div class="col-sm-6">
+                <label>DOB</label>
+                <input type="date" class="form-control" value="22-08-1989" />
+            </div>
+          </div>
+          <div class="row ml-3 p-1 cust-info-detail">
+            <div class="col-sm-6">
+                <label>Gender</label>
+                <select class="form-control" id="sel1">
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Other</option>
+                </select>
+            </div>
+            <div class="col-sm-6">
+                <label>Email ID (Optional)</label>
+                <input type="email" class="form-control" value="" />
+            </div>
+          </div>
+          <div class="row ml-3 p-1 cust-info-detail">
+            <div class="col-sm-6">
+                <label>Alternate Phone Number</label>
+                <input type="tel" class="form-control" value="7659536789" />
+            </div>
+            <div class="col-sm-6">
+                <label>State</label>
+                <select class="form-control" id="sel1">
+                  <option>Zambezi</option>
+                  <option>Colorado</option>
+                  <option>Connecticut</option>
+                  <option>Delaware</option>
+                  <option>Florida</option>
+                  <option>Georgia</option>
+                </select>
+            </div>
+          </div>
+          <div class="row ml-3 p-1 cust-info-detail">
+            <div class="col-sm-6">
+                <label>District</label>
+                <select class="form-control" id="sel1">
+                  <option>Luska</option>
+                  <option>District Of Columbia</option>
+                  <option>Oklahoma</option>
+                  <option>Oregon</option>
+                  <option>Pennsylvania</option>
+                  <option>Rhode Island</option>
+                  <option>South Carolina</option>
+                  <option>South Dakota</option>
+                  <option>Tennessee</option>
+                </select>
+            </div>
+            <div class="col-sm-6">
+                <label>LGA</label>
+                <select class="form-control" id="sel1">
+                  <option>Federal</option>
+                  <option>Limbh</option>
+                  <option>Uhnbn</option>
+                </select>
+            </div>
+          </div>
+          <div class="row ml-3 p-1 cust-info-detail">
+            <div class="col-sm-6">
+                <label>City</label>
+                <select class="form-control" id="sel1">
+                  <option>Pemba</option>
+                  <option>American Samoa</option>
+                  <option>Guam</option>
+                  <option>Northern Mariana Islands</option>
+                  <option>Puerto Rico</option>
+                </select>
+            </div>
+            <div class="col-sm-6">
+                <label>Address Line 1</label>
+                <input type="text" class="form-control" value="B-24/44" />
+            </div>
+          </div>
+          <div class="row ml-3 p-1 cust-info-detail">
+            <div class="col-sm-6">
+                <label>Address Line 2</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  value="Near Airtel Office"
+                />
+            </div>
+            <div class="col-sm-6">
+                <label>Address Line 3</label>
+                <input type="text" class="form-control" value="Hudson road" />
+            </div>
+          </div>
+          <div class="row ml-3 p-1 cust-info-detail">
+            <div class="col-sm-6">
+                <label>Postal Code</label>
+                <input type="number" class="form-control" value="10101" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-1 footer">
+        <div class="col-md-6 p-2">
+          <div>
+            <span class="p-1 footer-value">03</span>
+            <span class="p-1">:</span>
+            <span class="p-1 footer-value">00</span>
+          </div>
+        </div>
+        <div class="col-md-6 text-right p-2">
+          <div>
+            <button type="button" class="btn btn-outline-dark btn-sm mr-2">
+              REJECT
+            </button>
+            <button
+              type="button"
+              class="btn btn-dark btn-sm"
+              data-toggle="button"
+              aria-pressed="false"
+            >
+              APPROVE
+            </button>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
